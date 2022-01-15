@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: blueviolet;
+  height: 700px;
+
+  .main-title {
+    padding: 50px 20px;
+
+    h2 {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  .main-border {
+    background-color: pink;
+    position: relative;
+    -webkit-clip-path: polygon(100% 0,  125% 100%, 0 0, 100% 0);
+    clip-path: polygon(100% 0, 125% 100%, 0 0, 100% 0);
+
+    /* -webkit-clip-path: polygon(100% 0, 100% 25%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%); */
+
+    .main-photos {
+      display: flex;
+      justify-content: space-around;
+      transform: rotate(-15deg);
+
+      .photo-a {
+        >img {
+          width: 400px;
+          height: 400px;
+          object-fit: cover;
+          margin: 20px 30px;
+        }
+      }
+    }
+  }
+}
+
+/* header ココマデ */
+
+/* messages ココカラ */
+.message-text-oneline {
+  display: flex;
+  justify-content: space-around;
+
+  .one-message {
+    .from-name {
+      background-color: purple;
+      width: 50%;
+      margin: 20px 0;
+
+      h3 {
+        padding: 5px 10px;
+      }
+    }
+
+    .massage-text {
+      background-color: pink;
+      border-radius: 20px 0 20px 0;
+      width: 400px;
+      height: 300px;
+    }
+  }
+}
+
+/* .massage-text p {
+  padding: ;
+} */
+
+/* messages ココマデ */
+
+/* videos ココカラ */
+.video {
+  background-color: rgb(247, 231, 187);
+
+  .message-for-video {
+    h3 {
+      color: blueviolet;
+      font-size: 1.5rem;
+      transform: rotate(-10deg);
+    }
+  }
+}
+
+.message-for-shopping h3 {
+  color: blueviolet;
+  font-size: 1.5rem;
+  transform: rotate(-10deg);
+}
+/* videos ココマデ */
+
+/* shopping ココカラ*/
+// .shopping {
+//   .message-for-shopping {
+
+//   }
+// }
+
+.shopping-items-oneline {
+  display: flex;
+  justify-content: space-around;
+}
+
+.one-shopping-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.one-shopping-item {
+  margin: 20px 10px;
+}
+/* shopping  ココマデ*/
